@@ -19,6 +19,8 @@ framework:
     csrf_protection: ~
     validation:      { enable_annotations: true }
     #serializer:      { enable_annotations: true }
+    serializer:
+        enabled: true
     templating:
         engines: ['twig']
         #assets_version: SomeVersionScheme
@@ -66,8 +68,8 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-assetic:
-    debug:          '%kernel.debug%'
-    use_controller: '%kernel.debug%'
-    filters:
-        cssrewrite: ~
+#assetic:
+    #debug:          '%kernel.debug%'
+    #use_controller: '%kernel.debug%'
+    #filters:
+     #   cssrewrite: ~

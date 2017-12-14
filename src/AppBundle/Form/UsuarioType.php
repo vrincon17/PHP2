@@ -26,7 +26,18 @@ class UsuarioType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\Usuario'
+            'data_class' => 'AppBundle\Entity\Usuario',
+            'csrf_protection'=>False,
+            'allow_extra_field'=>True
+
+        
+        
+        
+        
         ));
     }
+
+
+
+
 }

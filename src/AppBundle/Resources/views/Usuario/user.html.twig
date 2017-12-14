@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block menu_usuario %} active {% endblock %}
+
+{% block title %} Registrar Usuario {% endblock %}
+
+{% block body %}
+
+    <h1>Lista de estudiantes</h1>
+<lu>
+    {%for usuario in usuarios %}
+        <li>{{usuario.nombre}}</li>
+    
+    {%endfor%}
+</lu>
+{% endblock %}
